@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creating form</title>
+</head>
+<body background="https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2019/10/Karthika-Gupta-Compelling-Nature-Photos-6.jpg?fit=1500%2C1000&ssl=1">
+
+
+	<h1 style=color:grey> Welcome To X-Workz</h1>
+
+	<h4 style=color:green> Please Fill The Below Details Correctly</h4>
+
+<pre>
+
+	<form action="/pagename" method="post">  <!--when we press the submit button after giving the inputs ACTION and METHOD must be 																written to perform an background operations-->
+		
+		<!--<p style=color:red>please enter the name as per SSLC marks card</p> -->
+		<label style=color:pink>Name:</label>
+		<input type="text" name="name" value="Tejas"> <!--here the value is given because if the form has no inputs than the 																default value is TEJAS fot the name-->
+		
+
+		<label style=color:green>Father name</label>
+		<input type="text" name="Father name">
+
+
+		<label style=color:grey>Mother name</label>
+		<input type="text" name="Mother name">
+
+
+		<label style=color:green>Email</label>
+		<input type="email" name="Email">
+
+
+		<label style=color:pink>Password</label>
+		<input type="Password" name="Password">
+
+
+		<label style=color:green>Mobile Number</label>
+		<input type="number" name="Mobile number">
+
+
+		<label style=color:grey>Date Of Birth</label>
+		<input type="Date" name="Date Of Birth">
+
+
+		<label style=color:blue>Gender</label>
+		<input type="radio" name="Gender" value="male">Male
+		<input type="radio" name="Gender" value="female">Female
+
+
+		<label style=color:green>Hobbies</label>
+		<input type="checkbox" name="Hobbies" value="Reading Books">Reading Books
+		<input type="checkbox" name="Hobbies" value="Playing Cricket">Playing Cricket
+		<input type="checkbox" name="Hobbies" value="Cooking">Cooking
+		<input type="checkbox" name="Hobbies" value="Visiting New Places">Visiting New Places
+
+
+		
+		<label style=color:pink>District</label>
+		<select>
+		<option value="Mandya">Mandya</option>
+		<option value="Hassan">Hassan</option>
+		<option value="Mysore">Mysore</option>
+		<option value="Bangaloe">Bangaloe</option>
+		<option value="Shivamogga">Shivamogga</option>
+		<option value="Ballary">Ballary</option>
+		<option value="Mangalore">india</option>
+		</select>
+		
+
+		<label style=color:grey>Image:</label>
+		<input type="file" name="Image" accept="pdf">
+
+
+		<label style=color:green>Description About Why To Join X-Workz</label>
+		<textarea rows="10" cols="50"></textarea>
+
+
+		<input type="submit" name="submit">
+
+
+
+</form>
+</pre>
+
+</body>
+</html>
