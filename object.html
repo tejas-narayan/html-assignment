@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object</title>
+</head>
+<body>
+
+	<h1>Object</h1>
+
+	<script type="text/javascript">
+
+	var car = { carname:"BMW",
+				model : "A4",
+				color : "white",
+				price : 7000000.00,
+				AC : true,
+				fullName:function(){
+					return this.carname+" "+this.model;
+				}
+				};
+	document.write(car.carname+" "+car.model+" "+car.color+" "+car.price+" "+car.ac);
+	
+	var fullname = car.fullName()
+
+	document.write("<br>"+fullname);
+
+	var AC =new Object();
+
+	AC.brand="LG";
+	AC.color="white";
+	AC.price=10000;
+	ac.running = function(a){
+			document.write("AC running using:"+a);
+		}
+		document.write("<br>"+ac.brand+" "+ac.color+" "+ac.price);
+
+		ac.running("Electricity");
+
+		function person(name,dob,age,address){
+			this.name = name;
+			this.dob = dob;
+			this.age = age;
+			this.address = address;
+		};
+
+		var personObj = new person("tej","17 apr 1995","25","Bangalore");
+
+		document.write("<br>"+personObj.name);
+		person.prototype.education = "BE";
+		document.write("<br>"+personObj.education);
+		person.prototype.changeAge = function(NewAge){
+			document.write(personObj.age = newAge);
+		}
+		document.write("<br>");
+
+
+	}
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String-Number</title>
+</head>
+<body>
+	
+	<h1>String and number</h1>
+
+	<script type="text/javascript">
+		var lang = "Js"; //literals
+		var plang = new String("Java"); //new
+
+		//string methods js
+
+		var str =  "javascript string and numbers methods string";
+
+		console.log(str.length);
+
+		console.log(str.concat("uses"));
+
+		console.log(str.indexOf("string"));
+
+		console.log(str.lastIndexOf("string"));
+
+		console.log(str.search("string"));
+
+		console.log(str.slice(11,20));
+
+		console.log(str.substr(11,6));
+
+
+		console.log(str.replace("javascript","Js"));
+
+		console.log(str);
+
+		console.log(str.toUpperCase());
+
+		console.log(str.toLowerCase());
+
+		
+		var name = "     T e j a s     "
+
+		console.log(name);
+
+		console.log(name.trim());
+
+		document.write(name);
+
+		console.log(charAt(6));
+
+		console.log(name.charCodeAt(6));    //ASCII
+
+
+		// number
+
+		var n = 5;	//literal way of declaring variable
+		var num = new number(56.5689);  // new keyword
+
+		console.log(num.toFixed(2));
+
+		console.log(typeof number("10.56"));
+
+
+
+		var b = "6"
+		var c = "bc"
+		
+		console.log(parseInt("6"));
+		console.log(typeof parseFloat("6.23"));
+		console.log(b*c);
+		console.log(Number.MAX_VALUE);
+
+		console.log(Number.MIN_VALUE);
+
+		console.log(Number.POSITIVE_INFINITY);
+
+		//type conversion
+		console.log(Number(true));
+
+
+		//function
+
+		function name(){
+			//statements
+		}
+
+		function add(a,b){
+			return a+b;
+		}
+
+		var res = add(4,8);
+		console.log(res);
+
+
+
+		// array
+		//index 0
+		var array=["concat","indexOf","lastIndexOf","search","replace"];
+
+		var array2 = new array("number","parseInt","parseFloat");
+
+		console.log(array[0]);
+		console.log(array[1]);
+		
+		console.log(array);
+
+		for(var i = 0;i<array.length; i++){
+			console.log(array[i]);
+
+
+			console.log(array.length);
+			
+			console.log(array.toString());
+
+			console.log(array.push("charAt"));  // add at the end of the array
+		
+			console.log(array.unshift("charCodeAt"));  //add the element at the starting position of an array
+
+			console.log(array.shift("charCodeAt"));  // remove at the start
+
+			console.log(array.pop()); // remove at the end
+
+			console.log(array.join("-"));
+
+			var newArray = array.slice(0,2);
+
+			console.log(newArray);
+		
+		}
+		
+
+
+	</script>
+</body>
+</html>

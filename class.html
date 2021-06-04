@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js class</title>
+</head>
+<body>
+
+	<h1>Js Class</h1>
+
+	<script type="text/javascript">
+		
+		class Animal{
+			constructor(name,breed,color,type){
+				this.name = name;
+				this.breed = breed;
+				this.color = color;
+				this.type = type;
+
+			}
+
+			eating(food){
+				document.write(this.name+" is eating "+food);
+			}
+		}
+
+
+		var dog = new Animal("puppi","ratwiller","black","domestic");
+
+		document.write(dog.name+" "+dog.breed);
+
+		dog.eating("chicken");
+
+
+	</script>
+
+</body>
+</html>
